@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=devicewidth, initial-scale=1.0"> <!-- Faz a página se adaptar ao celular -->
+    <tittle>Banco Dev</tittle>
+
+    <!-- CONEXÃO COM O CSS -->
+    <link rel="stylesheet" href="style.css">   
+</head>
+
+<body>
+
+<div class="container"> <!--Agrupa tudo como se fosse um celular-->
+
+<!-- Bloco 1: Topo -->
+<div class="Topo"> <!--Div = caixa / bloco genérico -->
+    <h2>Banco dev</h2> <!--Mais cara de app-->
+    <p>Bem Vindo, João</p> <!-- Descrição-->
+</div>
+
+<!-- Bloco 2: Saldo -->
+<div class="Saldo">
+    <span>Saldo</span> <!--Ele melhora o alinhamento-->
+    <h2>R$ 2.000,00</h2> <!-- Valor em Destaque-->
+</div>
+
+<!-- Bloco 3: Ações -->
+<div class="acoes">
+    <button>Transferir</button>
+    <button>Pagar</button>
+    <button>Extrato</button>
+</div>
+
+
+
+<!-- Bloco 4: Transações -->
+<div class="transacoes">
+
+    
+    <!--Cada transação virou um bloco separado-->
+    <div class="item">
+        <span>Pix Enviado</span>
+        <span> - R$100</span>
+    </div>
+
+
+    <div class="item">
+        <span>Boleto Pago</span>
+        <span> - R$200</span>
+    </div>
+
+    <div class="item">
+        <span>Transferência recebida</span>
+        <span>+ R$500</span>
+    </div>
+
+
+</div>
+    <!-- bloco extra tipo app-->
+    <div class="card">
+     <p>Cartão de Crédito</p>   
+     <h3> R$100.00,00</h3>
+
+    
+    </div> <!-- Final do container-->
+
+    <div class="card destaque">
+        <p>Dica inteligente</p>
+        <h3>Você gastou menos essa semana</h3>
+        <span>Continue economizando</span>
+    </div>
+    
+
+</body>
+
+</html>
