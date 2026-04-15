@@ -1,0 +1,129 @@
+
+body{/*Define as configurações para toda a página*/
+    font-family: Arial;/*Define fonte de texto*/
+    background: #f28700;/*Cor de fundo cinza claro*/
+    margin: 0;/*Remove as margens padrão do navegador*/
+
+}
+/*Container estilo celular*/
+.container {
+    max-width: 400px;/*limita a largura*/
+    margin: auto; /*Centralizar*/
+    padding: 0 10px; /* Espaço lateral para não grudar nas bordas*/
+}
+
+
+/*Topo: estiliza o cabeçalho azul no topo*/
+.Topo {
+    background: orange;
+    color: white;
+    padding: 20px;/*Espaçamento interno para não grudar nas bordas*/
+
+    /*Bordas arredondadas estilo app*/
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+
+.Saldo{
+   background: black;
+   color: orange;
+
+   margin: 20px 0;
+   padding: 20px;
+   border-radius: 15px;
+
+
+   /*Flexbox*/
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.acoes{
+    /*Flexbox*/
+    display: flex;
+    gap: 10px;/*Espaço entre botões*/
+    margin-bottom: 20px;
+}
+
+button {
+    flex: 1; /* divide espaço igualmente*/
+
+    padding: 15px;
+    background: #f28700;
+    color: #8a05be;
+
+    border: none;
+    border-radius: 10px;
+
+    font-weight: bold;
+    cursor: pointer;
+
+    display: block;/*Faz o botão ocupar a linha toda*/
+    width: 100%;/*Garante que o botão utilize toda a largura disponível*/
+    margin: 10px 0;/*Fica um espaço de 10px entre os botões*/
+    padding: 12px;/*altura interna do botão"Toque mais fácil"*/
+    background: black;/*Cor azul vibrante*/
+    color: orange;
+    border: none;/*Remove a borda padrão do sistema*/
+    border-radius: 5px;/*Cantos levemente arredondados*/
+    cursor: pointer;/* Muda o mouse para a mãozinha ao passar por cima*/
+}
+
+.transacoes h3 {
+    margin-bottom: 10px;
+}
+
+.transacoes { 
+    background: #f28700;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.card {
+    background: orange;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.destaque {
+    background: white;
+    border: 1px solid #e5b8ff;
+}
+
+/*Responsividade para celular*/
+@media (max-width: 600px) { /*Define que as regras serão aplicadas em ecrãs com largura maxima de 600px que é compativel para celulares*/
+    .container{
+        max-width: 100%;
+    }
+
+    .acoes { /*Mudar a direção do flexbox para coluna fazendo os botões ficarem um embaixo do outro*/
+        flex-direction: column; /*Empilha os botões no celular*/
+    }
+
+    .Saldo{
+        flex-direction: column; /*Empilha saldo e valor*/
+        align-items: flex-start; /*Alinha à esquerda*/
+        gap: 8px; /*Espaço entre as linhas*/
+    }
+    
+    .item {
+    background: #eaebee;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+
+    display: flex;/*flexbox*/
+    justify-content: space-between;
+    }
+    
+    .card {
+    background: white;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+}
